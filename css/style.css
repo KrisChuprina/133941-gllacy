@@ -8,18 +8,21 @@ body {
   background: #97aca1;
   vertical-align: top;
 }
-.main-header {
-  min-height: 75px;  
+.main-header::after {
+  content: '';
+  clear: both;
+  display: table;
 }
 .container {
   width: 1146px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   font-size: 0px;
 }
 .logo {
   width: 154px;
   float: left;
+  margin-left: -6px;
 }
 a {
   text-decoration: none;
@@ -27,22 +30,22 @@ a {
 }
 .main-menu {
   float: left;
+  padding-top: 20px;
+  margin-left: 28px;
   min-width: 385px;
-  margin-left: 25px;
-  min-height: 75px;
 }
 .main-menu ul {
   padding:0;
-  padding-top: 30px;
-
+  margin:0;
 }
 .main-menu li {
   margin: 0;
   display: inline-block;
-  padding-right: 28px;
   font-size: 16px;
+  line-height: 16px;
   vertical-align: middle;
   margin-right: 28px;
+  border-bottom: 1px solid rgb(165, 187, 176);
 }
 .menu-catalog {
   display: none;
@@ -55,73 +58,87 @@ a {
 .header-icons {
   float: right;
   min-width: 267px;
-  min-height: 75px;
+  padding-top: 15px;
+  text-align: right;
 }
 .header-icons .search {
   width: 33px;
   height: 33px;
   border-radius: 50%;
   border:none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2) url(../img/main/search.png) no-repeat 8px 8px;
   display: inline-block;  
   vertical-align: top;
+  margin-right: 9px;
 }
 .header-icons .open-search {
 
 }
 .header-icons .user-block {
   vertical-align: top;  
-  display: inline-block;
-  width: 50px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;  
+  width: 34px;
+  height: 27px;
+  background: rgba(255, 255, 255, 0.2) url(../img/main/enter.png) no-repeat 16px 6px;
   border-radius: 15px;
+  padding-top: 5px;
   padding-left: 43px;
-}
-.header-icons .user-block a {
-  vertical-align: middle;
+  padding-right: 16px;
+  margin-right: 9px;
   font-size: 14px;
+  font-weight: 500;
 }
 .header-icons .user-basket {  
   vertical-align: top;
   display: inline-block;
-  width: 117px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 82px;
+  height: 27px;
+  background: rgba(255, 255, 255, 0.2) url(../img/main/basket.png) no-repeat 16px 6px;
   border-radius: 15px;
-}
-.header-icons .user-basket a{
-  vertical-align: middle;
   font-size: 14px;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-right: 35px;
+}
+.header-icons .pull.user-basket {
+  background-image: none; 
+}
+.timetable {
+  width: 1146px;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  right: 0;
 }
 .time {
-  float:right;
+  margin-top: 0;
+  margin-bottom: 4px;
   min-width: 267px;
   text-align: right;
   font-size:14px;
   line-height: 16px;
 }
-.phone {
-  float:right;
+.phone {  
   min-width: 267px;
   text-align: right;
   font-size: 22px;
   font-weight: 900;
   line-height: 24px;
 }
-.red::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .slider {
-  margin-top: 280px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.slider div[class^="page-"]:not(:first-of-type) {
+  display: none;
+
 }
 .slider h1 {
   font-size: 60px;
   font-weight: 900;
   line-height: 60px;
   text-align: center;
+  padding-top: 225px;
 }
 .slider .button {
   background: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
