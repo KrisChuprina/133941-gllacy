@@ -114,7 +114,7 @@ a {
   top: -10px;
   right: 0;
 }
-.time {
+.timetable .time {
   margin-top: 0;
   margin-bottom: 4px;
   min-width: 267px;
@@ -122,7 +122,7 @@ a {
   font-size:14px;
   line-height: 16px;
 }
-.phone {  
+.timetable .phone {  
   min-width: 267px;
   text-align: right;
   font-size: 22px;
@@ -251,24 +251,45 @@ a {
   height: 325px;
   margin-right: 26px;  
   display: inline-block;
+  position: relative;
 } 
+.ice-cream .img-ice {
+  border-radius: 50%;
+}
+.ice-cream .img-hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .ice-cream .price {
   font-size: 45px;
-  line-height: auto;
+  line-height: 45px;
   text-align: left;
+  position: absolute;
+  top: 210px;
+  left: 0;
+}
+.ice-cream .price .n { 
+  margin-right: 3px; 
+  display: inline-block;
+  vertical-align: bottom;
+}
+.ice-cream .price img {
+  margin-right: 3px; 
+  margin-bottom: 3px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .ice-cream .kg {
+  display: inline-block;
   font-size: 30px;
-  font-weight: 700;
-  line-height: 45px;
-}
-.ice-cream img {
-
+  line-height: 30px;
 }
 .ice-cream .description {
   font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 .ice-cream:nth-child(4n) {
@@ -277,52 +298,91 @@ a {
 .about-shop {
   padding: 20px;
   margin-top: 40px;
+  background: rgb(237, 223, 197) url(../img/main/bg-about-gllacy.png) ;
+  border-radius: 15px;  
+  text-align: right;
 }
 .about-shop span {
   color: #323232;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+  display: block;
   text-align: left;
 }
-.about-shop .column {
-  vertical-align: top;
-  background-color: red;
-  display: inline-block;
-  width: 540px;
+.about-shop .row:first-of-type {
+  margin-top: 24px;
+  margin-bottom: 18px;
 }
-.about-shop .column:not(:last-child) {
-  margin-right: 26px;
+.about-shop .row p:first-of-type {
+  margin-right: 83px;
 }
-.about-shop .column p {  
-  margin-top: 26px;
+.about-shop p[class^="about-"] {
+  display:inline-block;
+  position: relative;
+  margin: 0;  
   width: 483px;
   color: #323232;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
-.blog, .delivery {
+.about-shop p[class^="about-"]::before {
+  position: absolute;
+  top:-15px;
+  left: -57px;
+}
+.about-shop .about-ice::before {
+  content: url(../img/main/ice.png);
+}
+.about-shop .about-cow::before {
+  content: url(../img/main/cow.png);
+}
+.about-shop .about-natural::before {
+  content: url(../img/main/natural.png);  
+}
+.about-shop .about-temp::before {
+  content: url(../img/main/temp.png);
+}
+.blog, .delivery{
   vertical-align: top;
-  background-color: red;
   width: 520px;
+  min-height: 180px;
   display: inline-block;
   padding: 20px;
-  margin-top: 40px; 
+  margin-top: 40px;
+  border-radius: 15px; 
 }
 .blog {
+  background: url(../img/main/bg-blog.jpg) no-repeat;
   margin-right: 26px;
 }
 .blog span {
   font-size: 16px;
+  color: #323232;
   font-weight: 500;
   text-align: left;
 }
 .blog a {
   font-size: 24px;
+  color: #323232;
   line-height: 30px;
   text-align: left;
   text-decoration: underline;
+}
+.bg-border {
+  background: rgb(248, 247, 244) url(../img/main/bg-border.png);
+  display: inline-block;
+  width: 560px;
+  height: 220px;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+.delivery {
+  min-height: 170px;
+  width: 510px;
+  background: rgb(248, 247, 244);
+  margin: 5px;  
 }
 .delivery p{
   color: #5a5a5a;
@@ -336,7 +396,7 @@ a {
 .delivery input {
   box-sizing: border-box;
   background-color: #ffffff;
-  width: 368px;
+  width: 358px;
   height: 44px;
   border: 1px solid rgba(178, 178, 178, 52);
   border-radius: 5px;
@@ -344,7 +404,8 @@ a {
   font-size: 16px;
   font-weight: 400;  
   text-align: left;
-  margin-right: 10px;
+  margin-right: 10px;  
+  padding-left: 10px;
 }
 
 .delivery button {
@@ -372,9 +433,9 @@ a {
   margin-top: 60px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.98);
-  width: 262px;
+  width: 252px;
   min-height: 245px;
-  padding: 30px 25px;
+  padding: 28px 25px;
 }
 .contacts p {
   color: #323232;
@@ -382,11 +443,16 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  margin: 0;
+}
+.contacts .phone {
+  margin-top: 17px;
+  line-height: 23px;
 }
 .contacts .bold {
   color: #323232;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 25px;
   font-weight: 700;
 }
 .contacts .form {
@@ -400,10 +466,12 @@ a {
   height: 44px;
   border: none;
   border-radius: 25px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 24px;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 24px;
+  color: #fefefe;
 }
 .contacts .connection {
   display: none;
