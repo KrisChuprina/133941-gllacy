@@ -74,10 +74,14 @@ a {
   background-color: #f7f6f3;
   text-decoration: none;
 }
-.main-menu  > li:hover a{
+.main-menu  > li:hover a, 
+.main-menu  > li:active a{
   color: #333333; 
 }
-
+.main-menu  > li:active {
+  background:#ededed;
+  box-shadow: inset 0px 2px 2px 0px rgb(139, 139, 139) ;
+}
 .main-menu  >li:hover .submenu {
   display: block
 }
@@ -157,22 +161,23 @@ a {
   padding: 20px 15px;
 }
 .header-icons .search:hover {
-  background: rgba(255, 255, 255) url(../img/main/search-open.png) no-repeat 8px 8px;
+  background: #fff url(../img/main/search-open.png) no-repeat 8px 8px;
 }
 
-.header-icons .search:hover  .open-search {
+.header-icons .search:hover + .open-search {
   display: block;
 }
-
+.header-icons input {
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
+  background: #fff;
+  padding: 10px;
+}
 .header-icons .open-search input {
- border: 1px solid #d3d3d2;
- border-radius: 5px;
- font-size: 14px;
- color: #999999;
- font-weight: 400;
- background: #fff;
- padding: 10px;
- width: 300px;
+  width: 300px;
 }
 .header-icons .user-block {
   vertical-align: top;  
@@ -189,7 +194,58 @@ a {
   line-height: 14px;
   font-weight: 500;
 }
+.header-icons .user-block:hover {
+  background: #fff url(../img/main/enter-hover.png) no-repeat 16px 6px;
+  color: #323232;
+}
+.header-icons .user-block:hover + .user-form {
+  display: block;
+}
+.header-icons .user-form {
+  position: absolute;
+  right: 120px;
+  z-index: 10;
 
+  display: none;
+
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px 15px;
+
+}
+
+.header-icons .user-form input {
+  width: 210px;
+  margin-bottom: 20px;
+}
+.header-icons .user-form .button {
+  display: inline-block;
+  float:left;
+  width: 100px;
+  text-align: center;
+  border-radius: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header-icons .user-form a .button {
+  font-size: 18px;
+}
+.header-icons .user-form .link {
+  display: inline-block;
+  float:right;
+  text-align: left;
+}
+.header-icons .user-form .link a {
+ font-size: 14px;
+ color: #323232;
+ font-weight: 400;
+ line-height: 16px;
+ text-decoration: underline;
+}
+.header-icons .user-form .link a:hover, a:active {
+  color: #e84d37;
+}
 .header-icons .user-basket {  
   vertical-align: top;
   display: inline-block;
@@ -314,6 +370,9 @@ button[class^="button"]:active {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+.slider-controls label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
 }
 #btn-1:checked ~ .site-wrapper .page-1,
 #btn-2:checked ~ .site-wrapper .page-2,
