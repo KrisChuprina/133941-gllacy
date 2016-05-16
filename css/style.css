@@ -60,12 +60,16 @@ a {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.3);
 }
-.main-menu  > li:hover .top{
+.main-menu .first {
+  background-color: #d07058;
+  text-decoration: none;
+}
+.main-menu  > li:not(.first-li):hover .top{
   background-color: #f7f6f3;
   text-decoration: none;
 }
-.main-menu  > li:hover a, 
-.main-menu  > li:active a{
+.main-menu  > li:hover a:not(.first), 
+.main-menu  > li:active a:not(.first){
   color: #333333; 
 }
 .main-menu  > li:active .top {
@@ -789,9 +793,9 @@ footer .menu span {
 /*Стили для каталога*/
 
 .breadcrumbs {
-  margin-top: 20px;
   position: absolute;
   left: 0;
+  top:-20px;
   min-width: 267px;
 }
 .breadcrumbs a {
