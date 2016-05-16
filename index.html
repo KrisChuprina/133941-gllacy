@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link  href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Gllacy</title>    
@@ -21,7 +22,7 @@
           <nav >
             <ul class="main-menu">
               <li>
-                <a href="#">Каталог</a>               
+                <a class="top" href="#">Каталог</a>               
                 <ul class="submenu">
                   <li><a class="new" href="#">Новинки</a></li>
                   <li><a href="#">Сливочное</a></li>
@@ -30,26 +31,32 @@
                   <li><a href="#">Мелорин</a></li>
                 </ul>             
               </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>            
-            </ul>
-            
+              <li><a class="top" href="#">Доставка и оплата</a></li>
+              <li><a class="top" href="#">О Компании</a></li>            
+            </ul>            
           </nav>
           <div class="header-icons">
-            <div class="search"></div>
-            <div class=" open-search">
-              <input type="search" value="Что ищем?">
-            </div>            
-            <a class="user-block" href="#">Вход</a>
-            <div class="user-form">
-              <input type="email" placeholder="Электронная почта">
-              <input type="password" placeholder="Пароль">
-              <a href="#"><div class="button">Войти</div></a>
-              <div class="link">
-                <a href="#">Забыли пароль?</a> <br>
-                <a href="#">Новая регистрация</a>
+            <div class="openning">
+              <div class="search">
+                <div class=" open-search">
+                  <input type="search" placeholder="Что ищем?">
+                </div>
               </div>
-            </div>
+          </div>  
+          <div class="openning-block">         
+            <div class="user-block">
+              <a href="#">Вход</a>
+              <div class="user-form">
+               <input type="email" placeholder="Электронная почта">
+               <input type="password" placeholder="Пароль">
+               <a href="#"><div class="button">Войти</div></a>
+              <div class="link">
+                 <a href="#">Забыли пароль?</a> <br>
+                 <a href="#">Новая регистрация</a>
+               </div>
+             </div>
+          </div> 
+          </div>          
             <div class="user-basket"><a href="#">Пусто</a></div>
           </div>  
         </div>      
@@ -98,36 +105,40 @@
           <section class="ice-group">
             <div class="ice-cream orange">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-1.jpg" height="267" width="267" alt="ice-cream">
+                <img class="img-ice" src="img/main/ice-1.png" height="267" width="267" alt="ice-cream">
                 <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
                 <div class="price"><span class="n"> 310</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
-                <div class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                <div class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>                
                 </a>                              
+                <a href="#" class="button">Быстрый просмотр</a>
             </div>
             <div class="ice-cream chocolate">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-2.jpg" height="267" width="267" alt="ice-cream">
+                <img class="img-ice" src="img/main/ice-2.png" height="267" width="267" alt="ice-cream">
                 <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
                 <div class="price"><span class="n"> 380</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
-                <div class="description">Сливочно-кофейное с кусочками шоколада</div>
+                <div class="description">Сливочно-кофейное с кусочками шоколада</div>                
                 </a> 
+                <a href="#" class="button">Быстрый просмотр</a>
             </div>
             <div class="ice-cream strawberry">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-3.jpg" height="267" width="267" alt="ice-cream">
+                <img class="img-ice" src="img/main/ice-3.png" height="267" width="267" alt="ice-cream">
                 <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
                 <div class="price"><span class="n">355</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
-                <div class="description">Сливочно-клубничное с <br>присыпкой из белого шоколада</div>
+                <div class="description">Сливочно-клубничное с <br>присыпкой из белого шоколада</div>                
                 </a>
+                <a href="#" class="button">Быстрый просмотр</a>
             </div>
             <div class="ice-cream caramel">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-4.jpg" height="267" width="267" alt="ice-cream">
+                <img class="img-ice" src="img/main/ice-4.png" height="267" width="267" alt="ice-cream">
                 <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
                 <div class="price"><span class="n"> 415</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
-                <div class="description">Сливочное крем-брюле с карамельной подливкой</div>
+                <div class="description">Сливочное крем-брюле с карамельной подливкой</div>                
                 </a>                
-            </div>            
+                <a href="#" class="button">Быстрый просмотр</a>
+            </div>         
           </section>
           <section class="about-shop">
             <span>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>            
@@ -182,10 +193,10 @@
       <footer>
         <div class="container">
           <div class="icons">
-            <div class="icon tw"><a href="#"><img src="img/main/tw.png" alt="logo-tw"></a></div>
-            <div class="icon inst"><a href="#"><img src="img/main/inst.png" alt="logo-inst"></a></div>
-            <div class="icon fb"><a href="#"><img src="img/main/fb.png" alt="logo-fb"></a></div>
-            <div class="icon vk"><a href="#"><img src="img/main/vk.png" alt="logo-vk"></a></div>
+            <div class="icon tw"><a href="#"><img src="img/main/tw.png" height="32" width="32" alt="logo-tw"></a></div>
+            <div class="icon inst"><a href="#"><img src="img/main/inst.png" height="32" width="32" alt="logo-inst"></a></div>
+            <div class="icon fb"><a href="#"><img src="img/main/fb.png" height="32" width="32" alt="logo-fb"></a></div>
+            <div class="icon vk"><a href="#"><img src="img/main/vk.png" height="32" width="32" alt="logo-vk"></a></div>
           </div>
           <div class="menu">
             <div class="menu-left">
