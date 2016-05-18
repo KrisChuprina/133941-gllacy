@@ -16,7 +16,7 @@
         <div class="container">
           <div class="logo">
             <a href="#">
-              <img src="img/main/Logo.png" height="64" width="154" alt="logo">
+              <img src="img/main/logo.png" height="64" width="154" alt="logo">
             </a>
           </div>
           <nav >
@@ -46,15 +46,15 @@
           <div class="openning-block">         
             <div class="user-block">
               <a href="#">Вход</a>
-              <div class="user-form">
+              <form class="user-form">
                <input type="email" placeholder="Электронная почта">
                <input type="password" placeholder="Пароль">
-               <a href="#"><div class="button">Войти</div></a>
+               <input type="submit" class="button" value="Войти">
               <div class="link">
                  <a href="#">Забыли пароль?</a> <br>
                  <a href="#">Новая регистрация</a>
                </div>
-             </div>
+             </form>
           </div> 
           </div>          
             <div class="user-basket"><a href="#">Пусто</a></div>
@@ -105,8 +105,7 @@
           <section class="ice-group">
             <div class="ice-cream orange">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-1.png" height="267" width="267" alt="ice-cream">
-                <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
+                <img class="img-ice" src="img/main/ice-1.png" height="267" width="267" alt="ice-cream">                
                 <div class="price"><span class="n"> 310</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
                 <div class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>                
                 </a>                              
@@ -114,8 +113,7 @@
             </div>
             <div class="ice-cream chocolate">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-2.png" height="267" width="267" alt="ice-cream">
-                <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
+                <img class="img-ice" src="img/main/ice-2.png" height="267" width="267" alt="ice-cream">                
                 <div class="price"><span class="n"> 380</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
                 <div class="description">Сливочно-кофейное с кусочками шоколада</div>                
                 </a> 
@@ -123,8 +121,7 @@
             </div>
             <div class="ice-cream strawberry">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-3.png" height="267" width="267" alt="ice-cream">
-                <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
+                <img class="img-ice" src="img/main/ice-3.png" height="267" width="267" alt="ice-cream">                
                 <div class="price"><span class="n">355</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
                 <div class="description">Сливочно-клубничное с <br>присыпкой из белого шоколада</div>                
                 </a>
@@ -132,8 +129,7 @@
             </div>
             <div class="ice-cream caramel">
               <a href="#">
-                <img class="img-ice" src="img/main/ice-4.png" height="267" width="267" alt="ice-cream">
-                <img class="img-hit" src="img/main/hit.png" height="61" width="61" alt="hit">
+                <img class="img-ice" src="img/main/ice-4.png" height="267" width="267" alt="ice-cream">                
                 <div class="price"><span class="n"> 415</span><img src="img/main/api.png" height="35" width="29" alt="ruble"><span class="kg">/кг</span></div>
                 <div class="description">Сливочное крем-брюле с карамельной подливкой</div>                
                 </a>                
@@ -141,7 +137,7 @@
             </div>         
           </section>
           <section class="about-shop">
-            <span>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>            
+            <p class="gllacy">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
             <div class="row">
               <p class="about-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
               <p class="about-cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>              
@@ -153,16 +149,14 @@
           </section>
           <section class="blog">
             <span>Новое в нашем блоге</span><br>
-            <a href="#">10  способов сервировки<br>фруктовых щербетов<br>к столу</a>                       
+            <a href="#">10  способов сервировки фруктовых щербетов<br> к столу</a>                       
           </section>
           <section class="bg-border">
             <div class="delivery">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="#">
                 <input id="email" type="email" placeholder="Электронная почта">                
-                <button class="button">
-                  Отправить
-                </button>                
+                <input class="button" type="submit" value="Отправить">                
               </form>
             </div>
           </section>
@@ -175,14 +169,7 @@
               <span class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span> 
             </p>
             <p class="phone">Для заказов по телефону:<br> <span class="bold">8 812 450-25-25</span><br>(с 10 до 20 ежедневно)</p>
-            <button class="button form">Форма обратной связи</button> 
-            <section class="connection">
-              <span>Мы обязательно вам ответим!</span>
-              <input type="text" placeholder="Как вас зовут?">
-              <input type="email" placeholder="Ваша почта для ответа?">
-              <textarea name="text" cols="30" rows="10">Напишите что-нибудь...</textarea>
-              <button>Отправить</button>
-            </section>             
+            <button type="submit" class="button form">Форма обратной связи</button>              
           </div>
         </div>
         </div>
@@ -191,10 +178,10 @@
       <footer>
         <div class="container">
           <div class="icons">
-            <div class="icon tw"><a href="#"><img src="img/main/tw.png" height="32" width="32" alt="logo-tw"></a></div>
-            <div class="icon inst"><a href="#"><img src="img/main/inst.png" height="32" width="32" alt="logo-inst"></a></div>
-            <div class="icon fb"><a href="#"><img src="img/main/fb.png" height="32" width="32" alt="logo-fb"></a></div>
-            <div class="icon vk"><a href="#"><img src="img/main/vk.png" height="32" width="32" alt="logo-vk"></a></div>
+            <a class="icon tw" href="#"></a>
+            <a class="icon inst" href="#"></a>
+            <a class="icon fb" href="#"></a>
+            <a class="icon vk" href="#"></a>
           </div>
           <div class="menu">
             <div class="menu-left">
@@ -207,7 +194,7 @@
             </div>
           </div>
           <div class="htmlacademy">
-            <img src="img/main/academy.png" alt="academy-logo"><br>
+            <img src="img/main/academy.png" alt="academy-logo">
             <span>Сделано в HTML Academy © 2016</span>
           </div>
         </div>
