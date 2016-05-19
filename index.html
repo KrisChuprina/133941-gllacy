@@ -38,17 +38,26 @@
           <div class="header-icons">
             <div class="openning">
               <div class="search">
-                <div class=" open-search">
-                  <input type="search" placeholder="Что ищем?">
-                </div>
+                <form class=" open-search">
+                <div class="for-label">
+                  <input class="form-reaction" id="search" type="search" placeholder="Что ищем?">
+                  <label for="search" class="form-field">Что ищем?</label>
+                  </div>
+                </form>
               </div>
           </div>  
           <div class="openning-block">         
             <div class="user-block">
               <a href="#">Вход</a>
               <form class="user-form">
-               <input type="email" placeholder="Электронная почта">
-               <input type="password" placeholder="Пароль">
+              <div class="for-label">
+               <input class="form-reaction" id="email" type="email" placeholder="Электронная почта">
+               <label for="email" class="form-field">Электронная почта</label>
+               </div>
+               <div class="for-label">
+               <input class="form-reaction" id="password" type="password" placeholder="Пароль">
+               <label for="password" class="form-field">Пароль</label>
+               </div>
                <input type="submit" class="button" value="Войти">
               <div class="link">
                  <a href="#">Забыли пароль?</a> 
@@ -155,7 +164,10 @@
             <div class="delivery">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="#">
-                <input id="email" type="email" placeholder="Электронная почта">                
+              <div class="for-label">
+                <input class="form-reaction" id="mail" type="email" placeholder="Электронная почта">  
+                <label for="mail" class="form-field">Электронная почта</label>              
+                </div>
                 <input class="button" type="submit" value="Отправить">                
               </form>
             </div>
@@ -173,8 +185,14 @@
             <div class="connection"
               <form>
                 <span>Мы обязательно вам ответим!</span>
-                <input type="text" placeholder="Как вас зовут?">
-                <input type="email" placeholder="Ваша почта для ответа?">
+                <div class="for-label">
+                <input class="form-reaction" id="text" type="text" placeholder="Как вас зовут?">
+                <label for="search" for="text" class="form-field">Как вас зовут?</label>
+                </div>
+                <div class="for-label">
+                <input class="form-reaction" id="mail-2" type="email" placeholder="Ваша почта для ответа?">
+                <label for="mail-2" class="form-field">Ваша почта для ответа?</label>
+                </div>
                 <textarea name="text" cols="42" rows="5">Напишите что-нибудь...</textarea>
                 <input class="button" type="submit" value="Отправить">
              </form> 
@@ -188,10 +206,10 @@
       <footer>
         <div class="container">
           <div class="icons">
-            <a class="icon tw" href="#"></a>
-            <a class="icon inst" href="#"></a>
-            <a class="icon fb" href="#"></a>
-            <a class="icon vk" href="#"></a>
+            <a class="social-btn tw" href="#"></a>
+            <a class="social-btn inst" href="#"></a>
+            <a class="social-btn fb" href="#"></a>
+            <a class="social-btn vk" href="#"></a>
           </div>
           <div class="menu">
             <div class="menu-left">

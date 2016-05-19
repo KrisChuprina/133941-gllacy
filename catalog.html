@@ -34,22 +34,31 @@
           <div class="header-icons">
             <div class="openning">
               <div class="search">
-                <div class=" open-search">
-                  <input type="search" placeholder="Что ищем?">
-                </div>
+                <form class=" open-search">
+                <div class="for-label">
+                  <input class="form-reaction" id="search" type="search" placeholder="Что ищем?">
+                  <label for="search" class="form-field">Что ищем?</label>
+                  </div>
+                </form>
               </div>
           </div>  
           <div class="openning-block">         
             <div class="user-block">
               <a href="#">Вход</a>
               <form class="user-form">
-               <input type="email" placeholder="Электронная почта">
-               <input type="password" placeholder="Пароль">
+              <div class="for-label">
+               <input class="form-reaction" id="email" type="email" placeholder="Электронная почта">
+               <label for="email" class="form-field">Электронная почта</label>
+               </div>
+               <div class="for-label">
+               <input class="form-reaction" id="password" type="password" placeholder="Пароль">
+               <label for="password" class="form-field">Пароль</label>
+               </div>
                <input type="submit" class="button" value="Войти">
               <div class="link">
                  <a href="#">Забыли пароль?</a> 
                  <a href="#">Новая регистрация</a>
-              </div>
+               </div>
              </form>
             </div> 
           </div>
@@ -104,7 +113,12 @@
             </div>
             <div class="filter-range">
               <span class="label range">Цена: 100 руб. – 500 руб.</span>
-              <input type="range" min="1" max="1000">
+              <div class="line">
+                <div class="white-line">
+                  <div class="min"></div>
+                  <div class="max"></div>
+                </div>
+              </div>
             </div>
             <div class="filter-radio">
               <span class="label radio">Жирность:</span>
@@ -244,10 +258,10 @@
       <footer class="footer-catalog">
         <div class="container">
           <div class="icons">
-            <a class="icon tw" href="#"></a>
-            <a class="icon inst" href="#"></a>
-            <a class="icon fb" href="#"></a>
-            <a class="icon vk" href="#"></a>
+            <a class="social-btn tw" href="#"></a>
+            <a class="social-btn inst" href="#"></a>
+            <a class="social-btn fb" href="#"></a>
+            <a class="social-btn vk" href="#"></a>
           </div>
           <div class="menu">
             <div class="menu-left">
